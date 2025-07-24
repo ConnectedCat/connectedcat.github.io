@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+strong {
+    font-weight: 500;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+}
+
+@media(min-width: 1515px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+header {
+    margin-bottom: 2rem;
+    & nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    & nav ul li {
+        margin-right: 1rem;
+    }
+}
+
+.name {
+    font-size: 1rem;
+    margin: 0;
+}
+.name~p {
+    margin: 0;
+}
+
+section {
+    min-height: calc(100vh - 4rem);
+
+    & h1{
+        margin: 0 0 4rem 0;
+        font-size: 3rem;
+    }
+
+    & h3 {
+        margin: 0 0 2rem 0;
+        font-size: 1.5rem;
+    }
+
+    & h3~p{
+        margin-top: -2rem;
+    }
+
+    & iframe {
+        max-width: 100%;
+    }
+
+    & article {
+        margin-bottom: 4rem;
+    }
+
+    & ul {
+        padding-left: 1rem;
+    }
+}
