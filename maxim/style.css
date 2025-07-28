@@ -1,8 +1,8 @@
 html, body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 12px;
+    padding: 12px;
     line-height: 1.5rem;
 }
 
@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-weight: 300;
+    margin-top: 0.5rem;
 }
 
 strong {
@@ -21,17 +22,18 @@ strong {
 main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 1rem;
+    gap: 3rem;
 }
 
-@media(min-width: 1515px) {
+@media(min-width: 1500px) {
     main {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 header {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+
     & nav ul {
         list-style: none;
         padding: 0;
@@ -54,20 +56,16 @@ header {
 }
 
 section {
-    min-height: calc(100vh - 4rem);
+    /* min-height: calc(100vh - 4rem); */
 
     & h1{
-        margin: 0 0 4rem 0;
+        margin: 0 0 3rem 0;
         font-size: 3rem;
     }
 
     & h3 {
-        margin: 0 0 2rem 0;
+        margin: 0 0 0.5rem 0;
         font-size: 1.5rem;
-    }
-
-    & h3~p{
-        margin-top: -2rem;
     }
 
     & iframe {
